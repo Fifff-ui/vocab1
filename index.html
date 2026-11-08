@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAT Vocabulary Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>SAT Vocabulary Practice</h1>
+    <p>Practice a word by typing its meaning or choosing an answer.</p>
+
+    <label for="mode">Answer style</label>
+    <select id="mode">
+      <option value="typed">Type the meaning</option>
+      <option value="multiple">Multiple choice</option>
+    </select>
+
+    <p id="progress"></p>
+    <h2 id="word"></h2>
+
+    <form id="answer-form">
+      <label id="answer-label" for="answer">What does this word mean?</label>
+      <input id="answer" autocomplete="off" placeholder="Type the meaning">
+      <button id="check-button" type="submit">Check answer</button>
+    </form>
+
+    <div id="choices" class="choices"></div>
+    <p id="feedback" aria-live="polite"></p>
+    <button id="next-button" type="button" hidden>Next word</button>
+  </main>
+</body>
+</html>
